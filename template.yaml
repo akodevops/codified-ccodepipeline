@@ -5,11 +5,9 @@ Parameters:
   CodeS3Bucket:
     Description: S3 Bucket in which the artifacts are stored
     Type: String
-    MinLength: 3
   CodeS3Key:
     Description: S3 Key for the lambda artifact
     Type: String
-    MinLength: 3
 Resources:
   TimeFunction:
     Type: AWS::Serverless::Function
