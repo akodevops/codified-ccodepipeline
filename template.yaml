@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: stops ec2 nightly
+Resources:
+  TimeFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Role: arn:aws:iam::406187633378:role/lambda-role
+      Handler: lambda.lambda_handler
+      Runtime: python3.10
+      CodeUri:
+        Bucket: codepipeline-us-east-2-795528076749
+        Key: akopipeline/BuildArtif/n1Uxu3m
+      
