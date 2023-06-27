@@ -1,6 +1,15 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: stops ec2 nightly
+Parameters:
+  CodeS3Bucket:
+    Description: S3 Bucket in which the artifacts are stored
+    Type: String
+    MinLength: 3
+  CodeS3Key:
+    Description: S3 Key for the lambda artifact
+    Type: String
+    MinLength: 3
 Resources:
   TimeFunction:
     Type: AWS::Serverless::Function
