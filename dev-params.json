@@ -1,17 +1,8 @@
 
 {
     "Parameters": {
-      "EnvironmentName": "dev",
       "CodeS3Bucket": "pipeline-dm-events-procura-branch-etl-job",
-      "CodeS3Key": "",
-      "NetworkStackName": "dev-system-network",
-      "CrossAccountDynamoDBReadRoleArn": "arn:aws:iam::701701444674:role/ProcuraReadAccess_IAMRole_AssumedByDX",
-      "LambdaProvisionedConcurrencyCount": "2",
-      "MskSecretName": "AmazonMSK_dev-branch-etl-user-msk-secret",
-      "MskSecretArn": "AmazonMSK_dev-branch-etl-user-msk-secret-oY0coM",
-      "MskBootstrapServers": "b-2.nonprodkafkamsk.zjkftg.c3.kafka.ca-central-1.amazonaws.com:9096,b-1.nonprodkafkamsk.zjkftg.c3.kafka.ca-central-1.amazonaws.com:9096",
-      "MskClusterStackName": "non-prod-system-msk",
-      "SnsStackName": "dxp-slackbot-sns"
+      "CodeS3Key": ""
     }
   }
   
