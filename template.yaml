@@ -9,6 +9,6 @@ Resources:
       Handler: lambda.lambda_handler
       Runtime: python3.10
       CodeUri:
-        Bucket: codepipeline-us-east-2-795528076749
-        Key: akopipeline/BuildArtif/n1Uxu3m
+        Bucket: !Ref CodeS3Bucket
+        Key: !Ref CodeS3Key
       
